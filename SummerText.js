@@ -9,7 +9,13 @@ SummerText.prototype.readFileASync= async function (file){
     })
 
     const lines = this.readFileLines(streamedFile)
+    for await (const line of lines) {
+      if(this.testLineForFile(line)){
+        await this.readFileASync(line)
+      } else {
         this.fileContents.push(Number(line) || 0)
+      }
+    }
   } catch (err){
     console.log(err)
   }
@@ -20,4 +26,13 @@ SummerText.prototype.readFileLines= function (stream){
     crlfDelay: Infinity
   });
 }
+SummerText.prototype.testLineForFile= function (line){
+  return isNaN(Number(line)) && line.split('.').includes('txt')
+}
+SummerText.prototype.sumLines= function (array){
+  return array.reduce(function (accumulator, current) {
+    return accumulator + current;
+  })
+}
+
 module.exports = SummerText;
