@@ -1,6 +1,11 @@
-function SummerText(file){
+function SummerText(file) {
   this.fileContents = []
   this.fileName = file
+  this.fileSum = 0
+  this.readFileASync(file).then(() => {
+    this.fileSum = this.sumLines(this.fileContents)
+    console.table({'file_name': this.fileName, result: this.fileSum})
+  })
 }
 SummerText.prototype.readFileASync= async function (file){
   try{
