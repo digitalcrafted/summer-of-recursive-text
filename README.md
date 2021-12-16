@@ -1,4 +1,5 @@
-##Summer of Recursive Text
+# Summer of Recursive Text
+
 This is a hypothetical exploration of _summing_ numbers recursively in a text file (summer of text 🤔) and printing the result
 
 - The summer function receives as input the path to a single file. Each line of the file will contain either a number or a relative path to another file.
