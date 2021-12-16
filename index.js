@@ -8,3 +8,5 @@ const commandLineOptionDefinitions = [
   }
 ]
 const file = commandLineArgs(commandLineOptionDefinitions).src
+const SummerText = new require('./SummerText')
+new SummerText(file)

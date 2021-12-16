@@ -1,3 +1,6 @@
+const fs = require('fs');
+const process = require('process');
+const readline = require('readline');
 function SummerText(file) {
   this.fileContents = []
   this.fileName = file
