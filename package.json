@@ -1,0 +1,14 @@
+{
+  "name": "summer-of-recursive-text",
+  "version": "1.0.0",
+  "description": "This is a hypothetical exploration of _summing_ numbers recursively in a text file (summer of text 🤔) and printing the result",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "https://github.com/digitalcrafted/summer-of-recursive-text.git"
+  ],
+  "author": "franconwu@gmail.com",
+  "license": "ISC"
+}
