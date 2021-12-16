@@ -10,5 +10,8 @@
     "https://github.com/digitalcrafted/summer-of-recursive-text.git"
   ],
   "author": "franconwu@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^5.2.0"
+  }
 }
